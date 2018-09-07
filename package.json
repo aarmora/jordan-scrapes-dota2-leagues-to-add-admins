@@ -1,0 +1,19 @@
+{
+  "name": "handle-admins",
+  "version": "1.0.0",
+  "description": "Add and remove admins per AD2L season.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "tsc && node ./dist/index.js",
+    "start:noHead": "tsc && node ./dist/index.js noHead"
+  },
+  "author": "Jordan Hansen",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^1.8.0"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^1.6.3",
+    "typescript": "^3.0.3"
+  }
+}
