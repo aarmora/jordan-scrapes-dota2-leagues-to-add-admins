@@ -5,7 +5,7 @@ import csv from 'csvtojson';
     try {
         const browser: Browser = await puppeteer.launch({ headless: false, args: [`--window-size=${1800},${1200}`] });
         const url = 'http://www.dota2.com/league/0/list';
-        const adminUrl = 'http://www.dota2.com/league/2642/admins';
+        const adminUrl = 'http://www.dota2.com/league/10260/admins';
         const testAdmin = 'https://steamcommunity.com/profiles/76561198040889152/';
 
         const page = await browser.newPage();
