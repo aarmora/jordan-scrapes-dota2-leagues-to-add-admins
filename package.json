@@ -4,16 +4,18 @@
   "description": "Add and remove admins per AD2L season.",
   "main": "./dist/index.js",
   "scripts": {
-    "start": "tsc && node ./dist/index.js",
-    "start:noHead": "tsc && node ./dist/index.js noHead"
+    "start": "tsc && node ./dist/index.js"
   },
   "author": "Jordan Hansen",
   "license": "ISC",
   "dependencies": {
+    "csv-parse": "^3.0.0",
     "puppeteer": "^1.8.0"
   },
   "devDependencies": {
+    "@types/csv-parse": "^1.1.11",
     "@types/puppeteer": "^1.6.3",
+    "csvtojson": "^2.0.8",
     "typescript": "^3.0.3"
   }
 }
