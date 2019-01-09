@@ -1,19 +1,22 @@
 import puppeteer, { Browser, ElementHandle } from 'puppeteer';
 import csv from 'csvtojson';
 
+const leagueId = 10260;
+// We get 90 seconds to enter our username, password, and 2fa info
+const timeToLogin = 90000;
+
 (async () => {
     try {
         const browser: Browser = await puppeteer.launch({ headless: false, args: [`--window-size=${1800},${1200}`] });
         const url = 'http://www.dota2.com/league/0/list';
-        const adminUrl = 'http://www.dota2.com/league/10260/admins';
-        const testAdmin = 'https://steamcommunity.com/profiles/76561198040889152/';
+        const adminUrl = `http://www.dota2.com/league/${leagueId}/admins`;
 
         const page = await browser.newPage();
         await page.setViewport({ height: 1200, width: 1900 });
         await page.goto(url);
         await page.click('.HomeContentSignInBox a');
 
-        await page.waitForSelector('.HomeWelcomeText', { timeout: 90000 });
+        await page.waitForSelector('.HomeWelcomeText', { timeout: timeToLogin });
         await page.goto(adminUrl);
         await page.waitForSelector('#addAdminForm');
 
