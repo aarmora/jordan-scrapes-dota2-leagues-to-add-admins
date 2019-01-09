@@ -4,7 +4,8 @@
   "description": "Add and remove admins per AD2L season.",
   "main": "./dist/index.js",
   "scripts": {
-    "start": "tsc && node ./dist/index.js"
+    "start": "npm i && tsc && node ./dist/index.js",
+    "start:noInstall": "tsc && node ./dist/index.js"
   },
   "author": "Jordan Hansen",
   "license": "ISC",
