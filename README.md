@@ -20,7 +20,7 @@ Tested on Node v10.15.0 and NPM v6.4.1.
 After installing [NodeJS](https://nodejs.org/en/) you should be able to just run the following in the terminal.
 
 ```
-npm i
+npm start
 ```
 
 ## Built With
