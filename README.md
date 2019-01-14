@@ -10,6 +10,7 @@ It will require user interaction due to the two factor authentication. By defaul
 
 It also requires a csv of admin steam urls. A template is available in the root of the project.
 
+[Full Guide](https://javascriptwebscrapingguy.com/jordan-interactively-scrapes-dota-2-leagues-in-order-to-add-admins/)
 
 ### Prerequisites
 
